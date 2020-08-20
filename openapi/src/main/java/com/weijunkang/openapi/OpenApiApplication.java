@@ -1,5 +1,6 @@
 package com.weijunkang.openapi;
 
+import com.weijunkang.openapi.annotation.EnableApiSecurity;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,6 +18,7 @@ import java.net.UnknownHostException;
  * @date 2020/8/13 17:40
  */
 @Slf4j
+@EnableApiSecurity
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 public class OpenApiApplication {
 
